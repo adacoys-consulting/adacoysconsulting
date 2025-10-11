@@ -59,7 +59,7 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-[#030303] border-t border-white/[0.05] py-12 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-t from-indigo-500/[0.05] via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-blue-500/[0.05] via-transparent to-transparent" />
 
       {/* Floating particles */}
       <div className="absolute inset-0 overflow-hidden">
@@ -72,7 +72,7 @@ const Footer = () => {
       <div ref={footerRef} className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center space-y-8">
           <div className="text-center">
-            <h3 className="text-2xl font-bold gradient-text-indigo mb-2">Adacoys Consulting</h3>
+            <h3 className="text-2xl font-bold gradient-text-blue mb-2">Adacoys Consulting</h3>
             <p className="text-white/40 text-sm">Construyendo Mejor Crédito, Construyendo Mejores Futuros</p>
           </div>
 

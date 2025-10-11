@@ -87,7 +87,7 @@ const ContactSection = () => {
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="text-white/90">Comienza Tu</span>
             <br />
-            <span className="gradient-text-indigo">Camino Crediticio</span>
+            <span className="gradient-text-blue">Camino Crediticio</span>
           </h2>
           <p className="text-white/50 text-lg max-w-2xl mx-auto leading-relaxed">
             ¿Listo para tomar control de tu crédito? Hablemos sobre cómo podemos ayudarte a alcanzar tus metas financieras.
@@ -163,7 +163,7 @@ const ContactSection = () => {
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white border-0 shadow-xl glow-indigo rounded-xl transition-all duration-300 hover:scale-105 h-12"
+                  className="w-full bg-gradient-to-r from-blue-500 to-cyan-600 hover:from-blue-600 hover:to-cyan-700 text-white border-0 shadow-xl glow-blue rounded-xl transition-all duration-300 hover:scale-105 h-12"
                 >
                   <PaperPlaneTilt size={20} weight="fill" className="mr-2" />
                   Enviar Mensaje

@@ -18,19 +18,19 @@ All colors MUST be HSL.
     --popover: 0 0% 3%;
     --popover-foreground: 0 0% 98%;
 
-    /* Indigo primary */
-    --primary: 239 84% 67%;
+    /* Blue primary #326FB8 */
+    --primary: 213 57% 46%;
     --primary-foreground: 0 0% 98%;
 
-    /* Rose secondary */
-    --secondary: 346 77% 63%;
+    /* Cyan secondary */
+    --secondary: 193 70% 50%;
     --secondary-foreground: 0 0% 98%;
 
     --muted: 0 0% 12%;
     --muted-foreground: 0 0% 60%;
 
-    /* Violet accent */
-    --accent: 270 70% 65%;
+    /* Blue accent */
+    --accent: 213 57% 56%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -38,22 +38,22 @@ All colors MUST be HSL.
 
     --border: 0 0% 15%;
     --input: 0 0% 12%;
-    --ring: 239 84% 67%;
+    --ring: 213 57% 46%;
 
     --radius: 1rem;
 
     /* Gradient colors */
-    --gradient-indigo-start: 239 84% 67%;
-    --gradient-indigo-end: 270 70% 60%;
-    --gradient-rose-start: 346 77% 63%;
-    --gradient-rose-end: 340 82% 52%;
-    --gradient-violet-start: 270 70% 65%;
-    --gradient-violet-end: 292 84% 61%;
+    --gradient-blue-start: 213 57% 46%;
+    --gradient-blue-end: 213 65% 60%;
+    --gradient-cyan-start: 193 70% 50%;
+    --gradient-cyan-end: 193 75% 60%;
+    --gradient-sky-start: 200 70% 55%;
+    --gradient-sky-end: 213 57% 56%;
 
     /* Glow effects */
-    --glow-indigo: 239 84% 67% / 0.3;
-    --glow-rose: 346 77% 63% / 0.3;
-    --glow-violet: 270 70% 65% / 0.3;
+    --glow-blue: 213 57% 46% / 0.3;
+    --glow-cyan: 193 70% 50% / 0.3;
+    --glow-sky: 200 70% 55% / 0.3;
   }
 }
 
@@ -81,25 +81,25 @@ All colors MUST be HSL.
   }
 
   /* Glow effects */
-  .glow-indigo {
-    box-shadow: 0 0 40px hsl(var(--glow-indigo)), 0 0 80px hsl(var(--glow-indigo));
+  .glow-blue {
+    box-shadow: 0 0 40px hsl(var(--glow-blue)), 0 0 80px hsl(var(--glow-blue));
   }
 
-  .glow-rose {
-    box-shadow: 0 0 40px hsl(var(--glow-rose)), 0 0 80px hsl(var(--glow-rose));
+  .glow-cyan {
+    box-shadow: 0 0 40px hsl(var(--glow-cyan)), 0 0 80px hsl(var(--glow-cyan));
   }
 
-  .glow-violet {
-    box-shadow: 0 0 40px hsl(var(--glow-violet)), 0 0 80px hsl(var(--glow-violet));
+  .glow-sky {
+    box-shadow: 0 0 40px hsl(var(--glow-sky)), 0 0 80px hsl(var(--glow-sky));
   }
 
   /* Gradient text */
-  .gradient-text-indigo {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-purple-300;
+  .gradient-text-blue {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-white/90 to-cyan-300;
   }
 
-  .gradient-text-rose {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-rose-300 via-white/90 to-pink-300;
+  .gradient-text-cyan {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-white/90 to-sky-300;
   }
 
   /* Smooth scroll */

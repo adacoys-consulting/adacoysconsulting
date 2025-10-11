@@ -7,7 +7,7 @@ function CreditCard({
   className,
   delay = 0,
   rotate = 0,
-  gradient = "from-indigo-500/20 to-purple-500/20",
+  gradient = "from-blue-500/20 to-cyan-500/20",
 }: {
   className?: string;
   delay?: number;
@@ -89,13 +89,13 @@ function CreditCard({
 const HeroSection = () => {
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#030303]">
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.05] via-transparent to-rose-500/[0.05] blur-3xl" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.05] via-transparent to-cyan-500/[0.05] blur-3xl" />
 
       <div className="absolute inset-0 overflow-hidden">
         <CreditCard
           delay={0.3}
           rotate={12}
-          gradient="from-indigo-500/20 to-purple-600/20"
+          gradient="from-blue-500/20 to-cyan-600/20"
           className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
         />
 
@@ -152,7 +152,7 @@ const HeroSection = () => {
                 Abre Puertas Con un
               </span>
               <br />
-              <span className="gradient-text-indigo">
+              <span className="gradient-text-blue">
                 Mejor Puntaje
               </span>
             </h1>
@@ -176,7 +176,7 @@ const HeroSection = () => {
           >
             <Button 
               size="lg"
-              className="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white border-0 shadow-xl glow-indigo px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:scale-105"
+              className="bg-gradient-to-r from-blue-500 to-cyan-600 hover:from-blue-600 hover:to-cyan-700 text-white border-0 shadow-xl glow-blue px-8 py-6 text-lg rounded-xl transition-all duration-300 hover:scale-105"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Comienza Tu Camino

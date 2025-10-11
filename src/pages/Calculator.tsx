@@ -133,7 +133,7 @@ const Calculator = () => {
           transition={{ duration: 0.6 }}
           className="glass-card p-8 rounded-2xl"
         >
-          <h1 className="text-3xl md:text-4xl font-bold text-center mb-2 gradient-text-indigo">
+          <h1 className="text-3xl md:text-4xl font-bold text-center mb-2 gradient-text-blue">
             Calculadora de Costos de Reparación de Crédito
           </h1>
           <p className="text-white/60 text-center mb-8">Adacoys Consulting</p>
@@ -284,7 +284,7 @@ const Calculator = () => {
                   </Button>
                 </Link>
                 <Link to="/#contact" className="flex-1">
-                  <Button className="w-full bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700">
+                  <Button className="w-full bg-gradient-to-r from-blue-500 to-cyan-600 hover:from-blue-600 hover:to-cyan-700">
                     Contáctanos
                   </Button>
                 </Link>

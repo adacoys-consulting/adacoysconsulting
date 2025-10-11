@@ -46,12 +46,12 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
       ref={loaderRef}
       className="fixed inset-0 z-50 flex items-center justify-center bg-[#030303]"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.08] via-transparent to-rose-500/[0.08] blur-3xl" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.08] via-transparent to-cyan-500/[0.08] blur-3xl" />
       
       <div className="relative z-10 w-full max-w-md px-8">
         <div ref={textRef} className="mb-12 text-center">
           <h1 className="text-5xl font-bold mb-4">
-            <span className="gradient-text-indigo">Credit Repair</span>
+            <span className="gradient-text-blue">Credit Repair</span>
           </h1>
           <p className="text-white/40 text-sm tracking-wider">
             Building Your Financial Future
@@ -61,7 +61,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
         <div className="relative h-1 w-full bg-white/[0.05] rounded-full overflow-hidden">
           <div
             ref={progressRef}
-            className="absolute left-0 top-0 h-full w-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full glow-indigo"
+            className="absolute left-0 top-0 h-full w-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full glow-blue"
           />
         </div>
 

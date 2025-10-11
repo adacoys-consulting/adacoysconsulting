@@ -62,7 +62,7 @@ const TestimonialsSection = () => {
       ref={sectionRef}
       className="relative min-h-screen w-full py-20 md:py-32 overflow-hidden bg-[#030303]"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.03] via-transparent to-rose-500/[0.03]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.03] via-transparent to-cyan-500/[0.03]" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-16 md:mb-20">
@@ -72,7 +72,7 @@ const TestimonialsSection = () => {
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="text-white/90">Historias Reales,</span>
             <br />
-            <span className="gradient-text-indigo">Resultados Reales</span>
+            <span className="gradient-text-blue">Resultados Reales</span>
           </h2>
           <p className="text-white/50 text-lg max-w-2xl mx-auto leading-relaxed">
             No solo confíes en nuestra palabra: escucha a los clientes que han transformado sus futuros financieros.
@@ -105,7 +105,7 @@ const TestimonialsSection = () => {
                 </p>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-br from-indigo-500/20 to-purple-600/20 border border-white/10">
+                  <div className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-br from-blue-500/20 to-cyan-600/20 border border-white/10">
                     <img
                       src={testimonial.image}
                       alt={testimonial.name}
