@@ -148,7 +148,10 @@ const Calculator = () => {
                 min="0"
                 max="30"
                 value={negativeAccounts}
-                onChange={(e) => setNegativeAccounts(parseInt(e.target.value) || 0)}
+                onChange={(e) => {
+                  const val = e.target.value === '' ? 0 : parseInt(e.target.value);
+                  setNegativeAccounts(isNaN(val) ? 0 : val);
+                }}
                 className="bg-white/5 border-white/10 text-white"
               />
             </div>
@@ -162,7 +165,10 @@ const Calculator = () => {
                 min="0"
                 max="30"
                 value={inquiries}
-                onChange={(e) => setInquiries(parseInt(e.target.value) || 0)}
+                onChange={(e) => {
+                  const val = e.target.value === '' ? 0 : parseInt(e.target.value);
+                  setInquiries(isNaN(val) ? 0 : val);
+                }}
                 className="bg-white/5 border-white/10 text-white"
               />
               {negativeAccounts > 0 && (
