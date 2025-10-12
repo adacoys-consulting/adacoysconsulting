@@ -49,8 +49,8 @@ const PRICING_DATA = {
 };
 
 const Calculator = () => {
-  const [negativeAccounts, setNegativeAccounts] = useState(0);
-  const [inquiries, setInquiries] = useState(0);
+  const [negativeAccountsInput, setNegativeAccountsInput] = useState("0");
+  const [inquiriesInput, setInquiriesInput] = useState("0");
   const [bankruptcy, setBankruptcy] = useState(false);
   const [calculated, setCalculated] = useState(false);
   const [results, setResults] = useState({
@@ -64,6 +64,8 @@ const Calculator = () => {
 
   const calculateCost = () => {
     setError("");
+    const negativeAccounts = parseInt(negativeAccountsInput || "0");
+    const inquiries = parseInt(inquiriesInput || "0");
 
     // Validation
     if (negativeAccounts < 0 || inquiries < 0) {
@@ -147,10 +149,16 @@ const Calculator = () => {
                 type="number"
                 min="0"
                 max="30"
-                value={negativeAccounts}
+                value={negativeAccountsInput}
                 onChange={(e) => {
-                  const val = e.target.value === '' ? 0 : parseInt(e.target.value);
-                  setNegativeAccounts(isNaN(val) ? 0 : val);
+                  const v = e.target.value.replace(/[^0-9]/g, "");
+                  setNegativeAccountsInput(v);
+                }}
+                onBlur={() => {
+                  let n = parseInt(negativeAccountsInput || "0");
+                  if (isNaN(n) || n < 0) n = 0;
+                  if (n > 30) n = 30;
+                  setNegativeAccountsInput(String(n));
                 }}
                 className="bg-white/5 border-white/10 text-white"
               />
@@ -164,14 +172,20 @@ const Calculator = () => {
                 type="number"
                 min="0"
                 max="30"
-                value={inquiries}
+                value={inquiriesInput}
                 onChange={(e) => {
-                  const val = e.target.value === '' ? 0 : parseInt(e.target.value);
-                  setInquiries(isNaN(val) ? 0 : val);
+                  const v = e.target.value.replace(/[^0-9]/g, "");
+                  setInquiriesInput(v);
+                }}
+                onBlur={() => {
+                  let n = parseInt(inquiriesInput || "0");
+                  if (isNaN(n) || n < 0) n = 0;
+                  if (n > 30) n = 30;
+                  setInquiriesInput(String(n));
                 }}
                 className="bg-white/5 border-white/10 text-white"
               />
-              {negativeAccounts > 0 && (
+              {parseInt(negativeAccountsInput || "0") > 0 && (
                 <p className="text-sm text-green-400 mt-2">
                   ℹ️ Los inquiries están incluidos en las disputas de cuentas negativas - sin costo adicional
                 </p>
