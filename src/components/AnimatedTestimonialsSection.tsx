@@ -65,7 +65,7 @@ export function AnimatedTestimonialsSection() {
           </p>
         </div>
 
-        <ContainerScroll className="container h-[300vh]">
+        <ContainerScroll className="container h-[600vh]">
           <div className="sticky left-0 top-0 h-svh w-full py-12">
             <CardsContainer className="mx-auto size-full h-[500px] w-[340px] md:h-[600px] md:w-[400px]">
               {TESTIMONIALS.map((testimonial, index) => (
