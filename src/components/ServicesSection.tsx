@@ -40,6 +40,15 @@ const ServicesSection = () => {
     );
   }, []);
 
+  const featuredService = {
+    icon: <UserCircle size={48} weight="light" />,
+    title: "Chequea tu Puntaje de Crédito",
+    description: "Obtén acceso inmediato a tu puntaje de crédito y descubre cómo mejorar tu perfil financiero.",
+    gradient: "from-blue-500/30 to-cyan-600/30",
+    glow: "glow-blue",
+    link: "https://myfreescorenow.com/enroll/?AID=ADACOYSCONSULTING&PID=36754",
+  };
+
   const services = [
     {
       icon: <FileText size={40} weight="light" />,
@@ -61,13 +70,6 @@ const ServicesSection = () => {
       description: "Estrategias personalizadas para establecer un historial crediticio positivo y mejorar tu perfil crediticio general.",
       gradient: "from-violet-500/20 to-fuchsia-600/20",
       glow: "glow-sky",
-    },
-    {
-      icon: <UserCircle size={40} weight="light" />,
-      title: "Monitoreo de Identidad",
-      description: "Monitoreo 24/7 para proteger contra robo de identidad y actividad no autorizada en tu perfil crediticio.",
-      gradient: "from-cyan-500/20 to-blue-600/20",
-      glow: "glow-blue",
     },
     {
       icon: <ListChecks size={40} weight="light" />,
@@ -107,6 +109,30 @@ const ServicesSection = () => {
           </p>
         </div>
 
+        {/* Featured Service Card - Centered */}
+        <div className="max-w-2xl mx-auto mb-12">
+          <a
+            href={featuredService.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block glass-card p-10 hover:bg-white/[0.08] transition-all duration-500 group relative overflow-hidden border-2 border-blue-500/30 hover:border-blue-500/50"
+          >
+            <div className={`absolute inset-0 bg-gradient-to-br ${featuredService.gradient} opacity-30 group-hover:opacity-50 transition-opacity duration-500`} />
+            
+            <div className="relative z-10 text-center">
+              <div className={`text-primary mb-6 group-hover:scale-110 transition-transform duration-300 ${featuredService.glow} inline-block`}>
+                {featuredService.icon}
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">{featuredService.title}</h3>
+              <p className="text-white/60 leading-relaxed text-lg mb-4">{featuredService.description}</p>
+              <span className="inline-block text-blue-400 group-hover:text-blue-300 font-medium">
+                Verificar Ahora →
+              </span>
+            </div>
+          </a>
+        </div>
+
+        {/* Regular Services Grid */}
         <div
           ref={cardsRef}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"

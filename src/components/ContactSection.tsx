@@ -58,12 +58,12 @@ const ContactSection = () => {
     {
       icon: <Phone size={24} weight="light" />,
       label: "Teléfono",
-      value: "(555) 123-4567",
+      value: "702-861-4457",
     },
     {
       icon: <Envelope size={24} weight="light" />,
       label: "Email",
-      value: "info@adacoys.com",
+      value: "admin@adacoysconsulting.com",
     },
     {
       icon: <MapPin size={24} weight="light" />,
