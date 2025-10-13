@@ -13,6 +13,16 @@ import testimonial5 from "@/assets/testimonial-5.png"
 import testimonial6 from "@/assets/testimonial-6.jpg"
 import testimonial7 from "@/assets/testimonial-7.jpg"
 import testimonial8 from "@/assets/testimonial-8.jpg"
+import testimonial9 from "@/assets/testimonial-9.jpg"
+import testimonial10 from "@/assets/testimonial-10.jpg"
+import testimonial11 from "@/assets/testimonial-11.png"
+import testimonial12 from "@/assets/testimonial-12.jpg"
+import testimonial13 from "@/assets/testimonial-13.jpg"
+import testimonial14 from "@/assets/testimonial-14.jpg"
+import testimonial15 from "@/assets/testimonial-15.jpg"
+import testimonial16 from "@/assets/testimonial-16.jpg"
+import testimonial17 from "@/assets/testimonial-17.jpg"
+import testimonial18 from "@/assets/testimonial-18.png"
 
 const TESTIMONIALS = [
   { id: 1, image: testimonial1 },
@@ -23,6 +33,16 @@ const TESTIMONIALS = [
   { id: 6, image: testimonial6 },
   { id: 7, image: testimonial7 },
   { id: 8, image: testimonial8 },
+  { id: 9, image: testimonial9 },
+  { id: 10, image: testimonial10 },
+  { id: 11, image: testimonial11 },
+  { id: 12, image: testimonial12 },
+  { id: 13, image: testimonial13 },
+  { id: 14, image: testimonial14 },
+  { id: 15, image: testimonial15 },
+  { id: 16, image: testimonial16 },
+  { id: 17, image: testimonial17 },
+  { id: 18, image: testimonial18 },
 ]
 
 export function AnimatedTestimonialsSection() {
