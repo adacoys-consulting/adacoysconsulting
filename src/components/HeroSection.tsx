@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Circle } from "lucide-react";
+import { Circle, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/adacoys-logo.png";
@@ -92,24 +92,36 @@ const HeroSection = () => {
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#030303]">
       {/* Skool Button - Top Right */}
-      <motion.a
-        href="https://www.skool.com/adacoys-academy-8263/about?ref=7d716a2ffab04479955389230d3bd923"
-        target="_blank"
-        rel="noopener noreferrer"
-        initial={{ opacity: 0, x: 20 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
-        className="absolute top-4 right-4 md:top-6 md:right-6 z-50 glass-card p-3 md:p-4 hover:bg-white/[0.08] transition-all duration-300 hover:scale-105"
-        style={{
-          boxShadow: '0 0 40px rgba(251, 146, 60, 0.4), 0 0 80px rgba(251, 146, 60, 0.2), 0 10px 30px rgba(0, 0, 0, 0.3)'
-        }}
-      >
-        <img 
-          src={skoolLogo} 
-          alt="Skool Community" 
-          className="h-10 md:h-12 w-auto object-contain"
-        />
-      </motion.a>
+      <div className="absolute top-4 right-4 md:top-6 md:right-6 z-50 flex items-center gap-3">
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.7 }}
+          className="hidden md:flex items-center gap-2 text-white/70 text-sm"
+        >
+          <span>Únete a nuestra comunidad</span>
+          <ArrowRight className="h-4 w-4" />
+        </motion.div>
+        
+        <motion.a
+          href="https://adacoysacademy.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="glass-card p-3 md:p-4 hover:bg-white/[0.08] transition-all duration-300 hover:scale-105"
+          style={{
+            boxShadow: '0 0 40px rgba(251, 146, 60, 0.4), 0 0 80px rgba(251, 146, 60, 0.2), 0 10px 30px rgba(0, 0, 0, 0.3)'
+          }}
+        >
+          <img 
+            src={skoolLogo} 
+            alt="Skool Community" 
+            className="h-10 md:h-12 w-auto object-contain"
+          />
+        </motion.a>
+      </div>
 
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.05] via-transparent to-cyan-500/[0.05] blur-3xl" />
 
