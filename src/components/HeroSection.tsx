@@ -99,12 +99,12 @@ const HeroSection = () => {
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="absolute top-6 right-6 z-50 glass-card p-3 hover:bg-white/[0.08] transition-all duration-300 hover:scale-105"
+        className="absolute top-4 right-4 md:top-6 md:right-6 z-50 glass-card p-3 md:p-4 hover:bg-white/[0.08] transition-all duration-300 hover:scale-105"
       >
         <img 
           src={skoolLogo} 
           alt="Skool Community" 
-          className="h-8 w-auto object-contain"
+          className="h-10 md:h-12 w-auto object-contain"
         />
       </motion.a>
 
