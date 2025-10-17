@@ -100,6 +100,9 @@ const HeroSection = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
         className="absolute top-4 right-4 md:top-6 md:right-6 z-50 glass-card p-3 md:p-4 hover:bg-white/[0.08] transition-all duration-300 hover:scale-105"
+        style={{
+          boxShadow: '0 0 40px rgba(251, 146, 60, 0.4), 0 0 80px rgba(251, 146, 60, 0.2), 0 10px 30px rgba(0, 0, 0, 0.3)'
+        }}
       >
         <img 
           src={skoolLogo} 
