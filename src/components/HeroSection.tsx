@@ -39,10 +39,12 @@ function CreditCard({
       <motion.div
         animate={{
           y: [0, 15, 0],
-          rotateY: [0, 5, 0],
+          x: [0, 20, 0, -20, 0],
+          rotateY: [0, 5, 0, -5, 0],
+          rotateZ: [rotate, rotate + 3, rotate, rotate - 3, rotate],
         }}
         transition={{
-          duration: 12,
+          duration: 15,
           repeat: Number.POSITIVE_INFINITY,
           ease: "easeInOut",
         }}
