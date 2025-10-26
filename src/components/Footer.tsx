@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { GithubLogo, LinkedinLogo, TwitterLogo, InstagramLogo } from "@phosphor-icons/react";
+import { FacebookLogo, TiktokLogo } from "@phosphor-icons/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,10 +42,8 @@ const Footer = () => {
   }, []);
 
   const socialLinks = [
-    { icon: <GithubLogo size={24} weight="fill" />, href: "#" },
-    { icon: <LinkedinLogo size={24} weight="fill" />, href: "#" },
-    { icon: <TwitterLogo size={24} weight="fill" />, href: "#" },
-    { icon: <InstagramLogo size={24} weight="fill" />, href: "#" },
+    { icon: <FacebookLogo size={24} weight="fill" />, href: "https://www.facebook.com/share/1A9B97eg3W/?mibextid=wwXIfr" },
+    { icon: <TiktokLogo size={24} weight="fill" />, href: "https://www.tiktok.com/@adacoys_consulting?_t=ZT-90snsQDyZFl&_r=1" },
   ];
 
   const navLinks = [
