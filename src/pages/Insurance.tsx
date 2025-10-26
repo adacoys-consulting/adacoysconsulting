@@ -173,7 +173,7 @@ const Insurance = () => {
               <span className="text-sm text-muted-foreground">Adacoys Insurance</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text-blue">
-              Tu "seguro" de reparación de crédito
+              Tu seguro de reparación de crédito
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
               Claro, honesto y sin fricción. Eliges un plan mensual que cubre la gestión de problemas comunes en tu historial de crédito.
