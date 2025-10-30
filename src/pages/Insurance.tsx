@@ -13,7 +13,7 @@ const Insurance = () => {
       id: "gold",
       name: "Gold",
       price: 25,
-      period: "6 meses de espera",
+      period: "3 meses de espera",
       description: "Plan básico para correcciones simples",
       formUrl: "https://airtable.com/appqUbuEtEmTa7fKm/pageKyjkuFCrdMDgt/form",
       features: [
@@ -32,7 +32,7 @@ const Insurance = () => {
       id: "platinum",
       name: "Platinum",
       price: 50,
-      period: "6 meses de espera",
+      period: "2 meses de espera",
       description: "Plan intermedio con más cobertura",
       formUrl: "https://airtable.com/appqUbuEtEmTa7fKm/pagTHQqfGVRM7atGi/form",
       features: [
@@ -52,7 +52,7 @@ const Insurance = () => {
       id: "centurion",
       name: "Centurion",
       price: 70,
-      period: "6 meses de espera",
+      period: "1 mes de espera",
       description: "Plan avanzado para casos complejos",
       formUrl: "https://airtable.com/appqUbuEtEmTa7fKm/pagTHQqfGVRM7atGi/form",
       features: [
